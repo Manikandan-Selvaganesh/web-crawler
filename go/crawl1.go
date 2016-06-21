@@ -69,7 +69,7 @@ func enqueue(uri string, queue chan string) {
 	links := collectlink(resp.Body)
 
 	for _, link := range links {
-                // Parse every URL in the specified domain and the follow URL's
+                        // Parse every URL in the specified domain and the follow URL's
 			absolute := fixUrl(link, uri)
 			if uri != "" {
 				go func() { queue <- absolute }()
