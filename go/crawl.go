@@ -72,6 +72,7 @@ func enqueue(uri string, queue chan string, domain string) {
 	links := collectlink(resp.Body)
 
 	for _, link := range links {
+                // Extract URL's only from the specified domain
 		if strings.Contains(link, domain) {
 			absolute := fixUrl(link, uri)
 			if uri != "" {
