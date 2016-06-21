@@ -1,0 +1,13 @@
+{
+	"domain":"http://manikandanselvaganesh.wordpress.com",
+	"skipext":	[
+					"pdf",
+					"xml"
+				],
+	"parserobots":false,
+	"debug":true,
+	"output":"sitemap.xml",
+	"exclude":	[
+				"action=edit"
+				]
+}
